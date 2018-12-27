@@ -1,4 +1,4 @@
-package br.com.comexport.lancamentoscontabeis.lancamentoscontabeis;
+package br.com.comexport.lancamentoscontabeis;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
