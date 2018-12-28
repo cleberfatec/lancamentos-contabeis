@@ -26,7 +26,7 @@ import br.com.comexport.lancamentoscontabeis.util.Utils;
 @Repository
 public class LancamentosContabeisRepository {
 
-	private static Map<String, LancamentoContabilModel> repository = new HashMap<>();
+	public static Map<String, LancamentoContabilModel> repository = new HashMap<>();
 
 	public ObjectIdModel cadastrarLancamento(LancamentoContabilModel lancamento) {
 		lancamento.setId(Utils.gerarChave());
@@ -127,7 +127,7 @@ public class LancamentosContabeisRepository {
 							.getAsDouble());	
 	}
 	
-	public static Predicate<LancamentoContabilModel> filtroContaContabil(Integer contaContabil) {		
+	private static Predicate<LancamentoContabilModel> filtroContaContabil(Integer contaContabil) {		
 		return l -> l.getContaContabil() == contaContabil;
 	}
 	
