@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * @author Cleber de Araujo
- *
+ * @date 02 de Jan de 2019
  */
 
 public class LancamentoContabilModel implements Comparable {

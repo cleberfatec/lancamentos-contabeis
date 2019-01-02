@@ -23,6 +23,9 @@ import br.com.comexport.lancamentoscontabeis.model.ObjectIdModel;
 /** 
  * @author Cleber de Araujo
  * @date 28 de dez de 2018
+ * 
+ * Estou executando os testes unitário sequencialmente porque estou utilizando um armazenamento estática<\br>
+ * dos dados cadastrados.
  *
  */
 @RunWith(SpringRunner.class)
@@ -37,6 +40,9 @@ public class LancamentosContabeisRepositoryTest {
 	private ObjectIdModel ret2;
 	private ObjectIdModel ret3;
 
+	/**
+	 * @throws Exception
+	 */
 	@Before
 	public void setUp() throws Exception {
 		repo = new LancamentosContabeisRepository();		
